@@ -1,0 +1,12 @@
+footer{
+    background-color: $bg-grey;
+    .redes{
+        height: 10vh;
+        @include flex (center, space-around, wrap);
+
+        i{
+            font-size: 3rem;
+            filter: drop-shadow(1px 1px 1px #fdfcfc);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@if ($season == christmas) {
+    .banner {
+        background-image: url(../img/christmas.jpg);
+    }
+}
+@else if($season == easter) {
+    .banner {
+        background-image: url(../img/easter.jpg);
+    }
+}
+@else if ($season == newYear) {
+    .banner {
+        background-image: url(../img/happy-new-year.jpg);
+    }
+}
+@else {
+    .banner {
+        background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    }
+}

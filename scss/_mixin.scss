@@ -1,0 +1,32 @@
+//MIXIN SIN PARAMETROS
+/* mixin sin parametros */
+
+
+@mixin botones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    text-align: center;   
+    border-radius: 25px;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    display: block;
+    width: 50%;
+
+}
+
+.btn-ppios{
+    @include botones;
+    background-color: darkmagenta;
+}
+
+/* mixin con parametro */
+@mixin flex($align, $justify, $wrap){
+    display: flex;
+    align-content: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+

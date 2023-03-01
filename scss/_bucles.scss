@@ -1,0 +1,22 @@
+@for $i from 2 through 6{
+    .circle-#{$i}{
+        width: $i * 13px;
+        height: $i * 13px;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+        padding:25px;
+    }
+}
+
+//to = termina en el valor anterior
+//through = termina en el ultimo num
+//$i variable de iteracion por donde van pasando los bucles
+//$i*2rem hace que en cada vuelta tome el valor de i y la multiplique por dos
+
+
+// $lista: valor, valor2, valor3;  $coloresBarra: 'pink', 'green', 'crimson'; */
+@each $color in $coloresBarra {
+    .#{$color}{
+        border-left: 3px solid #{$color};        
+    }
+}

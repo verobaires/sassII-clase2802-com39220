@@ -1,0 +1,16 @@
+.banner {
+    height: 10vh;
+    width: 100%;
+    margin-top: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2,
+    h3 {
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+        text-shadow: 4px 4px 3px red;
+    }
+}

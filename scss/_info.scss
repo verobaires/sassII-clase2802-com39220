@@ -1,0 +1,15 @@
+.info{
+    @include flex(center, space-around, wrap);
+  h2{
+    text-transform: uppercase;
+  }
+  .info-block{
+    padding-left: 25px;
+    height: 20rem;
+    width: 19rem;
+  }
+  .info-p{
+    margin-bottom: 0;
+    @extend .parrafo
+  }
+}

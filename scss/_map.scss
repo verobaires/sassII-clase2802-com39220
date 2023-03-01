@@ -1,0 +1,20 @@
+/* $nombre: (key:valor, key:valor) */
+
+/*MAPS*/
+
+$mapRedes:(twitter: #00ACEE, discord: #7289da, youtube:#c4302b);
+
+@each $red, $colorRed  in $mapRedes {
+    .#{$red} {
+        color: $colorRed;
+    }
+}
+
+/*MAP-GET*/
+
+$h2-gral:(color:#730f89, f-size:2.25rem);
+
+.colab-h2{
+    color: map-get($h2-gral,color);
+    font-size: map-get($h2-gral, f-size);
+}
